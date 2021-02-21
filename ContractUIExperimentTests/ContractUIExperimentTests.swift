@@ -1,10 +1,3 @@
-//
-//  ContractUIExperimentTests.swift
-//  ContractUIExperimentTests
-//
-//  Created by Alex on 2/20/21.
-//
-
 import XCTest
 @testable import ContractUIExperiment
 
