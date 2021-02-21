@@ -6,7 +6,17 @@ protocol IngredientServiceClient {
     func fetchIngredients(onResponse: @escaping FetchIngredientsResponseHandler)
 }
 
-final class DefaultIngredientServiceClient: IngredientServiceClient {
+final class HttpIngredientServiceClient: IngredientServiceClient {
+    let baseUrl: String
+
+    init(baseUrl: String) {
+        self.baseUrl = baseUrl
+    }
+
+    convenience init() {
+        self.init(baseUrl: "")
+    }
+
     func fetchIngredients(onResponse: @escaping FetchIngredientsResponseHandler) {
         let ingredients = [
             Ingredient(name: "Butter"),
@@ -15,8 +25,11 @@ final class DefaultIngredientServiceClient: IngredientServiceClient {
             Ingredient(name: "Eggs"),
             Ingredient(name: "Lemons")
         ]
-        DispatchQueue.main.async {
-            onResponse(.success(ingredients))
-        }
+        guard let url = URL(string: baseUrl + "/ingredients") else { return }
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            DispatchQueue.main.async {
+                onResponse(.success(ingredients))
+            }
+        }.resume()
     }
 }

@@ -10,7 +10,7 @@ final class IngredientListViewModel: ObservableObject {
     }
 
     convenience init() {
-        self.init(ingredientServiceClient: DefaultIngredientServiceClient())
+        self.init(ingredientServiceClient: HttpIngredientServiceClient())
     }
 
     func fetchIngredients() {

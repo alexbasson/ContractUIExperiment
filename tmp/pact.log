@@ -1,0 +1,57 @@
+I, [2021-02-20T23:17:00.511825 #43275]  INFO -- : Cleared interactions
+I, [2021-02-20T23:17:00.517990 #43275]  INFO -- : Registered expected interaction GET /ingredients
+D, [2021-02-20T23:17:00.518435 #43275] DEBUG -- : {
+  "description": "a request for the list of ingredients",
+  "providerState": "a list of ingredients exists",
+  "request": {
+    "method": "get",
+    "path": "/ingredients"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "json_class": "Pact::ArrayLike",
+      "contents": {
+        "name": "Butter",
+        "id": "CD37CD4E-3F62-44B9-8BD8-23EC6160B34E"
+      },
+      "min": 1
+    }
+  },
+  "metadata": null
+}
+I, [2021-02-20T23:17:00.532055 #43275]  INFO -- : Received request GET /ingredients
+D, [2021-02-20T23:17:00.532448 #43275] DEBUG -- : {
+  "path": "/ingredients",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:1234",
+    "Accept": "*/*",
+    "Accept-Language": "en-us",
+    "Connection": "keep-alive",
+    "Accept-Encoding": "gzip, deflate",
+    "User-Agent": "ContractUIExperiment/1 CFNetwork/1220.1 Darwin/20.3.0",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-02-20T23:17:00.532917 #43275]  INFO -- : Found matching response for GET /ingredients
+D, [2021-02-20T23:17:00.533211 #43275] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "json_class": "Pact::ArrayLike",
+    "contents": {
+      "name": "Butter",
+      "id": "CD37CD4E-3F62-44B9-8BD8-23EC6160B34E"
+    },
+    "min": 1
+  }
+}
+I, [2021-02-20T23:17:00.537187 #43275]  INFO -- : Verifying - interactions matched
+I, [2021-02-20T23:17:00.541342 #43275]  INFO -- : Writing pact for ingredient-service to /Users/alex/workspace/ContractUIExperiment/tmp/pacts/ingredient-ios-ingredient-service.json

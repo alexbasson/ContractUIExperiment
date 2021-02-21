@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		FA06FE9E25E1FD6C00B95A0A /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FE9D25E1FD6C00B95A0A /* Ingredient.swift */; };
 		FA06FEA325E2001400B95A0A /* IngredientListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEA225E2001400B95A0A /* IngredientListViewModel.swift */; };
 		FA06FEA825E201F700B95A0A /* IngredientServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEA725E201F700B95A0A /* IngredientServiceClient.swift */; };
+		FA06FEAE25E207D400B95A0A /* PactConsumerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA06FEAD25E207D400B95A0A /* PactConsumerSwift */; };
+		FA06FEB325E2083800B95A0A /* HttpIngredientServiceClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEB225E2083800B95A0A /* HttpIngredientServiceClientTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		FA06FE9D25E1FD6C00B95A0A /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		FA06FEA225E2001400B95A0A /* IngredientListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListViewModel.swift; sourceTree = "<group>"; };
 		FA06FEA725E201F700B95A0A /* IngredientServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientServiceClient.swift; sourceTree = "<group>"; };
+		FA06FEB225E2083800B95A0A /* HttpIngredientServiceClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpIngredientServiceClientTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA06FEAE25E207D400B95A0A /* PactConsumerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +133,7 @@
 			children = (
 				FA06FE7C25E1C82B00B95A0A /* ContractUIExperimentTests.swift */,
 				FA06FE7E25E1C82B00B95A0A /* Info.plist */,
+				FA06FEB225E2083800B95A0A /* HttpIngredientServiceClientTest.swift */,
 			);
 			path = ContractUIExperimentTests;
 			sourceTree = "<group>";
@@ -176,6 +181,9 @@
 				FA06FE7A25E1C82B00B95A0A /* PBXTargetDependency */,
 			);
 			name = ContractUIExperimentTests;
+			packageProductDependencies = (
+				FA06FEAD25E207D400B95A0A /* PactConsumerSwift */,
+			);
 			productName = ContractUIExperimentTests;
 			productReference = FA06FE7825E1C82B00B95A0A /* ContractUIExperimentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -229,6 +237,9 @@
 				Base,
 			);
 			mainGroup = FA06FE5E25E1C82900B95A0A;
+			packageReferences = (
+				FA06FEAC25E207D400B95A0A /* XCRemoteSwiftPackageReference "pact-consumer-swift" */,
+			);
 			productRefGroup = FA06FE6825E1C82A00B95A0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -285,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA06FE7D25E1C82B00B95A0A /* ContractUIExperimentTests.swift in Sources */,
+				FA06FEB325E2083800B95A0A /* HttpIngredientServiceClientTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA06FEAC25E207D400B95A0A /* XCRemoteSwiftPackageReference "pact-consumer-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DiUS/pact-consumer-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA06FEAD25E207D400B95A0A /* PactConsumerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA06FEAC25E207D400B95A0A /* XCRemoteSwiftPackageReference "pact-consumer-swift" */;
+			productName = PactConsumerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA06FE5F25E1C82900B95A0A /* Project object */;
 }
