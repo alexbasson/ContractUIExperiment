@@ -10,9 +10,5 @@ class ContractUIExperimentUITests: XCTestCase {
         app.launch()
 
         XCTAssertTrue(app.staticTexts["Butter"].exists)
-        XCTAssertTrue(app.staticTexts["Flour"].exists)
-        XCTAssertTrue(app.staticTexts["Sugar"].exists)
-        XCTAssertTrue(app.staticTexts["Eggs"].exists)
-        XCTAssertTrue(app.staticTexts["Lemons"].exists)
     }
 }
