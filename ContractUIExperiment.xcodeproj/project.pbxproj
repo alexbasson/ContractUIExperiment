@@ -15,11 +15,13 @@
 		FA06FE8825E1C82B00B95A0A /* ContractUIExperimentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FE8725E1C82B00B95A0A /* ContractUIExperimentUITests.swift */; };
 		FA06FE9925E1FB5100B95A0A /* IngredientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FE9825E1FB5100B95A0A /* IngredientListView.swift */; };
 		FA06FE9E25E1FD6C00B95A0A /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FE9D25E1FD6C00B95A0A /* Ingredient.swift */; };
-		FA06FEA325E2001400B95A0A /* IngredientListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEA225E2001400B95A0A /* IngredientListViewModel.swift */; };
+		FA06FEA325E2001400B95A0A /* IngredientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEA225E2001400B95A0A /* IngredientsViewModel.swift */; };
 		FA06FEA825E201F700B95A0A /* IngredientServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEA725E201F700B95A0A /* IngredientServiceClient.swift */; };
 		FA06FEAE25E207D400B95A0A /* PactConsumerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA06FEAD25E207D400B95A0A /* PactConsumerSwift */; };
 		FA06FEB325E2083800B95A0A /* HttpIngredientServiceClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEB225E2083800B95A0A /* HttpIngredientServiceClientTest.swift */; };
 		FA06FEDD25E8917800B95A0A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEDC25E8917800B95A0A /* Config.swift */; };
+		FA06FEE225E8928000B95A0A /* CreateIngredientFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEE125E8928000B95A0A /* CreateIngredientFormView.swift */; };
+		FA06FEEA25E8A49B00B95A0A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEE925E8A49B00B95A0A /* PrimaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +56,12 @@
 		FA06FE8925E1C82B00B95A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA06FE9825E1FB5100B95A0A /* IngredientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListView.swift; sourceTree = "<group>"; };
 		FA06FE9D25E1FD6C00B95A0A /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
-		FA06FEA225E2001400B95A0A /* IngredientListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListViewModel.swift; sourceTree = "<group>"; };
+		FA06FEA225E2001400B95A0A /* IngredientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewModel.swift; sourceTree = "<group>"; };
 		FA06FEA725E201F700B95A0A /* IngredientServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientServiceClient.swift; sourceTree = "<group>"; };
 		FA06FEB225E2083800B95A0A /* HttpIngredientServiceClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpIngredientServiceClientTest.swift; sourceTree = "<group>"; };
 		FA06FEDC25E8917800B95A0A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FA06FEE125E8928000B95A0A /* CreateIngredientFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIngredientFormView.swift; sourceTree = "<group>"; };
+		FA06FEE925E8A49B00B95A0A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +120,11 @@
 				FA06FE7025E1C82B00B95A0A /* Preview Content */,
 				FA06FE9825E1FB5100B95A0A /* IngredientListView.swift */,
 				FA06FE9D25E1FD6C00B95A0A /* Ingredient.swift */,
-				FA06FEA225E2001400B95A0A /* IngredientListViewModel.swift */,
+				FA06FEA225E2001400B95A0A /* IngredientsViewModel.swift */,
 				FA06FEA725E201F700B95A0A /* IngredientServiceClient.swift */,
 				FA06FEDC25E8917800B95A0A /* Config.swift */,
+				FA06FEE125E8928000B95A0A /* CreateIngredientFormView.swift */,
+				FA06FEE925E8A49B00B95A0A /* PrimaryButton.swift */,
 			);
 			path = ContractUIExperiment;
 			sourceTree = "<group>";
@@ -285,11 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA06FEEA25E8A49B00B95A0A /* PrimaryButton.swift in Sources */,
 				FA06FE9E25E1FD6C00B95A0A /* Ingredient.swift in Sources */,
 				FA06FEA825E201F700B95A0A /* IngredientServiceClient.swift in Sources */,
-				FA06FEA325E2001400B95A0A /* IngredientListViewModel.swift in Sources */,
+				FA06FEA325E2001400B95A0A /* IngredientsViewModel.swift in Sources */,
 				FA06FEDD25E8917800B95A0A /* Config.swift in Sources */,
 				FA06FE6D25E1C82A00B95A0A /* ContentView.swift in Sources */,
+				FA06FEE225E8928000B95A0A /* CreateIngredientFormView.swift in Sources */,
 				FA06FE6B25E1C82A00B95A0A /* ContractUIExperimentApp.swift in Sources */,
 				FA06FE9925E1FB5100B95A0A /* IngredientListView.swift in Sources */,
 			);
