@@ -19,6 +19,7 @@
 		FA06FEA825E201F700B95A0A /* IngredientServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEA725E201F700B95A0A /* IngredientServiceClient.swift */; };
 		FA06FEAE25E207D400B95A0A /* PactConsumerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA06FEAD25E207D400B95A0A /* PactConsumerSwift */; };
 		FA06FEB325E2083800B95A0A /* HttpIngredientServiceClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEB225E2083800B95A0A /* HttpIngredientServiceClientTest.swift */; };
+		FA06FEDD25E8917800B95A0A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FEDC25E8917800B95A0A /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		FA06FEA225E2001400B95A0A /* IngredientListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListViewModel.swift; sourceTree = "<group>"; };
 		FA06FEA725E201F700B95A0A /* IngredientServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientServiceClient.swift; sourceTree = "<group>"; };
 		FA06FEB225E2083800B95A0A /* HttpIngredientServiceClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpIngredientServiceClientTest.swift; sourceTree = "<group>"; };
+		FA06FEDC25E8917800B95A0A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				FA06FE9D25E1FD6C00B95A0A /* Ingredient.swift */,
 				FA06FEA225E2001400B95A0A /* IngredientListViewModel.swift */,
 				FA06FEA725E201F700B95A0A /* IngredientServiceClient.swift */,
+				FA06FEDC25E8917800B95A0A /* Config.swift */,
 			);
 			path = ContractUIExperiment;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				FA06FE9E25E1FD6C00B95A0A /* Ingredient.swift in Sources */,
 				FA06FEA825E201F700B95A0A /* IngredientServiceClient.swift in Sources */,
 				FA06FEA325E2001400B95A0A /* IngredientListViewModel.swift in Sources */,
+				FA06FEDD25E8917800B95A0A /* Config.swift in Sources */,
 				FA06FE6D25E1C82A00B95A0A /* ContentView.swift in Sources */,
 				FA06FE6B25E1C82A00B95A0A /* ContractUIExperimentApp.swift in Sources */,
 				FA06FE9925E1FB5100B95A0A /* IngredientListView.swift in Sources */,
@@ -328,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -389,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -568,6 +574,132 @@
 			};
 			name = Release;
 		};
+		FA06FECC25E8856E00B95A0A /* UITests */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "http://localhost:9000";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = UITests;
+		};
+		FA06FECD25E8856E00B95A0A /* UITests */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ContractUIExperiment/Preview Content\"";
+				DEVELOPMENT_TEAM = CG7Z8Q45GH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ContractUIExperiment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.conditionallyconvergent.ContractUIExperiment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = UITests;
+		};
+		FA06FECE25E8856E00B95A0A /* UITests */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CG7Z8Q45GH;
+				INFOPLIST_FILE = ContractUIExperimentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.conditionallyconvergent.ContractUIExperimentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContractUIExperiment.app/ContractUIExperiment";
+			};
+			name = UITests;
+		};
+		FA06FECF25E8856E00B95A0A /* UITests */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CG7Z8Q45GH;
+				INFOPLIST_FILE = ContractUIExperimentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.conditionallyconvergent.ContractUIExperimentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ContractUIExperiment;
+			};
+			name = UITests;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +707,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA06FE8A25E1C82B00B95A0A /* Debug */,
+				FA06FECC25E8856E00B95A0A /* UITests */,
 				FA06FE8B25E1C82B00B95A0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -584,6 +717,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA06FE8D25E1C82B00B95A0A /* Debug */,
+				FA06FECD25E8856E00B95A0A /* UITests */,
 				FA06FE8E25E1C82B00B95A0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -593,6 +727,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA06FE9025E1C82B00B95A0A /* Debug */,
+				FA06FECE25E8856E00B95A0A /* UITests */,
 				FA06FE9125E1C82B00B95A0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -602,6 +737,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA06FE9325E1C82B00B95A0A /* Debug */,
+				FA06FECF25E8856E00B95A0A /* UITests */,
 				FA06FE9425E1C82B00B95A0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

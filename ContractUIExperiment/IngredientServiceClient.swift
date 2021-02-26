@@ -19,7 +19,7 @@ final class HttpIngredientServiceClient: IngredientServiceClient {
     }
 
     convenience init() {
-        self.init(baseUrl: "http://localhost:9000")
+        self.init(baseUrl: Config.baseUrl)
     }
 
     func fetchIngredients(onResponse: @escaping FetchIngredientsResponseHandler) {
