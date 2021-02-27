@@ -27,24 +27,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <PreActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "PATH=/usr/local/bin:$PATH&#10;PACT_OUTPUT=&quot;/Users/alex/workspace/ContractUIExperiment&quot;&#10;pact-mock-service start --pact-specification-version 2.0.0 --log &quot;${PACT_OUTPUT}/tmp/pact.log&quot; --pact-dir &quot;${PACT_OUTPUT}/tmp/pacts&quot; -p 1234&#10;">
-            </ActionContent>
-         </ExecutionAction>
-      </PreActions>
-      <PostActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "PATH=/usr/local/bin:$PATH&#10;pact-mock-service stop&#10;">
-            </ActionContent>
-         </ExecutionAction>
-      </PostActions>
       <Testables>
          <TestableReference
             skipped = "NO">

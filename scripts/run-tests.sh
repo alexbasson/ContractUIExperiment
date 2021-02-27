@@ -20,6 +20,14 @@ function go_to_project_root_directory() {
   cd "$script_dir/.." || exit 1
 }
 
+function install_brew_dependencies_if_necessary() {
+  if ! command -v pact-mock-service $> /dev/null
+  then
+    echo "Installing brew dependencies"
+    brew bundle
+  fi
+}
+
 function clean_project() {
   xcodebuild clean -project $XCODE_PROJECT_FILE | cat
 }
@@ -67,6 +75,7 @@ function run_ui_tests() {
 function main() {
   go_to_project_root_directory
   set_bash_error_handling
+  install_brew_dependencies_if_necessary
 
   clean_project
 
